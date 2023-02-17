@@ -11,7 +11,6 @@ public class Test {
         };
     }
 
-
     @org.testng.annotations.Test(dataProvider = "data")
     public void test(String str1, String str2, String str3, String str4, String str5, String result){
         Assert.assertEquals(result, Solution.compareIgnoreOrder(new String[]{str1, str2, str3, str4, str5}));
